@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/24" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.snake.Controller">
+   <children>
+      <GridPane layoutX="801.0" layoutY="343.0" maxHeight="310.0" maxWidth="310.0" minHeight="310.0" minWidth="310.0" prefHeight="310.0" prefWidth="310.0">
+
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.6666259765625" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="5.0" minWidth="5.0" prefWidth="5.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.6666259765625" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="5.0" minWidth="5.0" prefWidth="5.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+
+         <rowConstraints>
+            <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="5.0" prefHeight="5.0" valignment="CENTER" vgrow="NEVER" />
+            <RowConstraints maxHeight="193.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="144.33334350585938" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+
+         <children>
+
+            <Line endX="76.431396484375" endY="-147.06858825683594" fill="BLUE" startX="76.43150329589844" startY="163.3958740234375" stroke="#4336da" strokeWidth="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Line endX="-2.0355224609375" endY="0.9644660949707031" fill="BLUE" startX="-309.5355224609375" startY="0.9644660949707031" stroke="#4338da" strokeWidth="5.0" GridPane.rowIndex="3" />
+            <Line endX="166.46446228027344" endY="1.0354499816894531" fill="BLUE" startX="472.9289245605469" startY="1.0709304809570312" stroke="#4226da" strokeWidth="5.0" GridPane.rowIndex="1" />
+            <Line endX="76.431396484375" endY="-147.06858825683594" fill="BLUE" startX="76.43150329589844" startY="163.3958740234375" stroke="#4336da" strokeWidth="5.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <!-- 0 -->
+            <AnchorPane prefHeight="57.0" prefWidth="41.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+               <children>
+                  <AnchorPane prefHeight="100.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btn0" mnemonicParsing="false" onAction="#Button0" prefHeight="100.0" prefWidth="105.0" style="-fx-background-color: none;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <AnchorPane fx:id="anchorPane0X" layoutX="40.0" prefHeight="93.0" prefWidth="1.0" visible="false">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="97.0" layoutY="2.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="50.0" layoutY="50.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="anchorPane0O" prefHeight="22.0" prefWidth="34.0" visible="false">
+                           <children>
+                              <Circle fill="DODGERBLUE" layoutX="50.0" layoutY="50.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Circle fill="BLACK" layoutX="50.0" layoutY="50.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </AnchorPane>
+            <!-- 1 -->
+            <AnchorPane prefHeight="93.0" prefWidth="36.0" GridPane.columnIndex="2" GridPane.rowIndex="0">
+               <children>
+                  <Button fx:id="btn1" mnemonicParsing="false" onAction="#Button1" prefHeight="100.0" prefWidth="105.0" style="-fx-background-color: none;" />
+                  <AnchorPane fx:id="anchorPane1X" layoutX="40.0" prefHeight="93.0" prefWidth="1.0" visible="false">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="97.0" layoutY="2.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="50.0" layoutY="50.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorPane1O" prefHeight="22.0" prefWidth="34.0" visible="false">
+                     <children>
+                        <Circle fill="DODGERBLUE" layoutX="50.0" layoutY="50.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="BLACK" layoutX="50.0" layoutY="50.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <!-- 2 -->
+            <AnchorPane prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="0">
+               <children>
+                  <Button fx:id="btn2" mnemonicParsing="false" onAction="#Button2" prefHeight="100.0" prefWidth="105.0" style="-fx-background-color: none;" />
+                  <AnchorPane fx:id="anchorPane2X" layoutX="40.0" prefHeight="93.0" prefWidth="1.0" visible="false">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="97.0" layoutY="2.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="50.0" layoutY="50.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorPane2O" prefHeight="22.0" prefWidth="34.0" visible="false">
+                     <children>
+                        <Circle fill="DODGERBLUE" layoutX="50.0" layoutY="50.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="BLACK" layoutX="50.0" layoutY="50.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <!-- 3 -->
+            <AnchorPane layoutX="50.0" layoutY="50.0" prefHeight="59.0" prefWidth="45.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="btn3" mnemonicParsing="false" onAction="#Button3" prefHeight="100.0" prefWidth="105.0" style="-fx-background-color: none;" />
+                  <AnchorPane fx:id="anchorPane3X" layoutX="40.0" prefHeight="93.0" prefWidth="1.0" visible="false">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="97.0" layoutY="2.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="50.0" layoutY="50.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorPane3O" prefHeight="22.0" prefWidth="34.0" visible="false">
+                     <children>
+                        <Circle fill="DODGERBLUE" layoutX="50.0" layoutY="50.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="BLACK" layoutX="50.0" layoutY="50.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <!-- 4  -->
+            <AnchorPane prefHeight="59.0" prefWidth="45.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="btn4" mnemonicParsing="false" onAction="#Button4" prefHeight="100.0" prefWidth="105.0" style="-fx-background-color: none;" />
+                  <AnchorPane fx:id="anchorPane4X" layoutX="40.0" prefHeight="93.0" prefWidth="1.0" visible="false">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="97.0" layoutY="2.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="50.0" layoutY="50.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorPane4O" prefHeight="22.0" prefWidth="34.0" visible="false">
+                     <children>
+                        <Circle fill="DODGERBLUE" layoutX="50.0" layoutY="50.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="BLACK" layoutX="50.0" layoutY="50.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <!-- 5 -->
+            <AnchorPane prefHeight="77.0" prefWidth="49.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="btn5" mnemonicParsing="false" onAction="#Button5" prefHeight="100.0" prefWidth="105.0" style="-fx-background-color: none;" />
+                  <AnchorPane fx:id="anchorPane5X" layoutX="40.0" prefHeight="93.0" prefWidth="1.0" visible="false">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="97.0" layoutY="2.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="50.0" layoutY="50.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorPane5O" prefHeight="22.0" prefWidth="34.0" visible="false">
+                     <children>
+                        <Circle fill="DODGERBLUE" layoutX="50.0" layoutY="50.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="BLACK" layoutX="50.0" layoutY="50.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <!-- 6 -->
+            <AnchorPane prefHeight="59.0" prefWidth="45.0" GridPane.columnIndex="0" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btn6" mnemonicParsing="false" onAction="#Button6" prefHeight="100.0" prefWidth="105.0" style="-fx-background-color: none;" />
+                  <AnchorPane fx:id="anchorPane6X" layoutX="40.0" prefHeight="93.0" prefWidth="1.0" visible="false">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="97.0" layoutY="2.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="50.0" layoutY="50.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorPane6O" prefHeight="0.0" prefWidth="0.0" visible="false">
+                     <children>
+                        <Circle fill="DODGERBLUE" layoutX="50.0" layoutY="50.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="BLACK" layoutX="50.0" layoutY="50.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <!-- 7  -->
+            <AnchorPane prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btn7" mnemonicParsing="false" onAction="#Button7" prefHeight="100.0" prefWidth="105.0" style="-fx-background-color: none;" />
+                  <AnchorPane fx:id="anchorPane7X" layoutX="40.0" prefHeight="93.0" prefWidth="1.0" visible="false">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="97.0" layoutY="2.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="50.0" layoutY="50.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorPane7O" prefHeight="22.0" prefWidth="34.0" visible="false">
+                     <children>
+                        <Circle fill="DODGERBLUE" layoutX="50.0" layoutY="50.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="BLACK" layoutX="50.0" layoutY="50.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <!-- 8 -->
+            <AnchorPane prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btn8" mnemonicParsing="false" onAction="#Button8" prefHeight="100.0" prefWidth="105.0" style="-fx-background-color: none;" />
+                  <AnchorPane fx:id="anchorPane8X" layoutX="40.0" prefHeight="93.0" prefWidth="1.0" visible="false">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="97.0" layoutY="2.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="50.0" layoutY="50.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorPane8O" prefHeight="0.0" prefWidth="0.0" visible="false">
+                     <children>
+                        <Circle fill="DODGERBLUE" layoutX="50.0" layoutY="50.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="BLACK" layoutX="50.0" layoutY="50.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <AnchorPane fx:id="winningMessage" layoutX="107.0" layoutY="176.0" prefHeight="726.0" prefWidth="1732.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="731.0" layoutX="-1.0" layoutY="1.0" opacity="0.49" stroke="BLACK" strokeType="INSIDE" width="1730.0" />
+            <Button onAction="#menuBtn" layoutX="1127.0" layoutY="379.0" mnemonicParsing="false" text="Menu" />
+            <Button onAction="#resetBtn" layoutX="517.0" layoutY="381.0" mnemonicParsing="false" text="Reset" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
