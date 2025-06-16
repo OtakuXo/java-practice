@@ -1,4 +1,4 @@
-package com.snake;
+package com.TickTackToe;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

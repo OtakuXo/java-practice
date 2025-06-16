@@ -1,4 +1,4 @@
-package com.snake;
+package com.TickTackToe;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
